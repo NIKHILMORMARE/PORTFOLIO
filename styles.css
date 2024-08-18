@@ -1,0 +1,206 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #ff007f, #ffbb00, #00bfff, #ff00ff);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 0%; }
+    50% { background-position: 100% 100%; }
+    100% { background-position: 0% 0%; }
+}
+
+header {
+    text-align: center;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 0 0 50% 50%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    margin-bottom: 2rem;
+    position: relative;
+    z-index: 1;
+}
+
+header h1 {
+    font-size: 3.5rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+header p {
+    font-size: 1.8rem;
+    color: #555;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.contact-info a, .contact-info span {
+    color: #ff00ff;
+    font-size: 1.1rem;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.contact-info a:hover, .contact-info span:hover {
+    border-bottom: 2px solid #00bfff;
+}
+
+section {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 1;
+}
+
+section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.skills {
+    background: linear-gradient(145deg, #00bfff, #ff007f);
+    color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.skills h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.skill-set {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.skill-category {
+    flex: 1;
+    min-width: 220px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.skill-category:hover {
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.skill-category .icon {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.skill-category .icon img {
+    width: 50px;
+    height: 50px;
+    filter: invert(1);
+    transition: filter 0.3s ease;
+}
+
+.skill-category:hover .icon img {
+    filter: invert(0.6);
+}
+
+.skill-category h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.skill-category p {
+    font-size: 1.1rem;
+    text-align: center;
+    margin: 0;
+}
+
+
+.projects .project {
+    background: linear-gradient(145deg, #ffbb00, #ff00ff);
+    color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.projects .project:hover {
+    transform: scale(1.05);
+}
+
+.certifications-awards {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.certifications, .awards {
+    flex: 1;
+    background: linear-gradient(145deg, #00bfff, #ff007f);
+    color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.certifications:hover, .awards:hover {
+    transform: scale(1.05);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 0.5rem 0;
+    font-size: 1.1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+ul li:last-child {
+    border-bottom: none;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    margin-top: 2rem;
+    position: relative;
+    z-index: 1;
+}
+
+footer p {
+    margin: 0;
+    color: #555;
+}
