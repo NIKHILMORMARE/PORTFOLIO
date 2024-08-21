@@ -6,6 +6,7 @@ body {
     color: #333;
     margin: 0;
     padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 @keyframes gradientBG {
@@ -39,6 +40,7 @@ header p {
 .contact-info {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
     gap: 1.5rem;
     margin-top: 1rem;
 }
@@ -140,7 +142,6 @@ section h2 {
     margin: 0;
 }
 
-
 .projects .project {
     background: linear-gradient(145deg, #ffbb00, #ff00ff);
     color: white;
@@ -155,8 +156,6 @@ section h2 {
     transform: scale(1.05);
 }
 
-
-/* Add this to your existing styles.css file */
 .project-link {
     color: #7d047d;
     text-decoration: none;
@@ -170,6 +169,7 @@ section h2 {
 
 .certifications-awards {
     display: flex;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
     justify-content: space-between;
     gap: 1rem;
 }
@@ -182,6 +182,7 @@ section h2 {
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease;
+    min-width: 280px; /* Ensures a minimum width to prevent items from shrinking too much */
 }
 
 .certifications:hover, .awards:hover {
@@ -216,4 +217,60 @@ footer {
 footer p {
     margin: 0;
     color: #555;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 1200px) {
+    section {
+        margin: 1rem;
+        padding: 1.5rem;
+    }
+
+    header h1 {
+        font-size: 3rem;
+    }
+
+    header p {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    header p {
+        font-size: 1.3rem;
+    }
+
+    section h2, .skills h2 {
+        font-size: 2rem;
+    }
+
+    .skill-category, .projects .project, .certifications, .awards {
+        flex: 1 1 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1.2rem;
+    }
+
+    section h2, .skills h2 {
+        font-size: 1.8rem;
+    }
+
+    .skill-category h3, .skill-category p {
+        font-size: 1.2rem;
+    }
+
+    .contact-info a, .contact-info span {
+        font-size: 1rem;
+    }
 }
