@@ -155,6 +155,19 @@ section h2 {
     transform: scale(1.05);
 }
 
+
+/* Add this to your existing styles.css file */
+.project-link {
+    color: #7d047d;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.project-link:hover {
+    border-bottom: 2px solid #00bfff;
+}
+
 .certifications-awards {
     display: flex;
     justify-content: space-between;
